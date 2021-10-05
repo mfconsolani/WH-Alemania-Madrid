@@ -1,61 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./visaMock.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>Bruselas</title>
-</head>
-<body>
-  <div class="main-container container d-flex flex-column align-items-center input-group bg-light p-2">
-    <div class="mb-3">
-      <h3><a href="../index.html">Menu Principal</a></h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./visaMock.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Bruselas</title>
+  </head>
+  <body>
+    <div
+      class="
+        main-container
+        container
+        d-flex
+        flex-column
+        align-items-center
+        input-group
+        bg-light
+        p-2
+      "
+    >
+      <div class="mb-3">
+        <h3><a href="../index.html">Menu Principal</a></h3>
+      </div>
+      <button
+        class="btn btn-outline-danger mb-3"
+        onClick="window.location.reload();"
+      >
+        Refresh Page
+      </button>
+      <div>
+        <label for="apellido" class="label">Apellido</label>
+        <input id="apellido" class="form-control" type="text" />
+      </div>
+      <div>
+        <label for="nombre" class="label">Nombre</label>
+        <input id="nombre" class="form-control" type="text" />
+      </div>
+      <div>
+        <label for="mail" class="label">Mail</label>
+        <input id="mail" class="form-control" type="mail" />
+      </div>
+      <div>
+        <label for="mail" class="label">Mail</label>
+        <input id="mail" class="form-control" type="mail" />
+      </div>
+      <div>
+        <label for="telefono" class="label">Telefono</label>
+        <input id="telefono" class="form-control" type="text" />
+      </div>
+      <div>
+        <label for="pasaporte" class="label">Pasaporte</label>
+        <input id="pasaporte" class="form-control" type="text" />
+      </div>
+      <div>
+        <label for="date" class="label">Fecha de Nacimiento</label>
+        <input
+          id="date"
+          class="form-control"
+          type="date"
+          onkeydown="return false"
+        />
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          value="something"
+          id="flexCheckDefault"
+        />
+        <label class="form-check-label" for="flexCheckDefault">
+          Mensaje en aleman que no sabemos que no sabemos que dice
+        </label>
+      </div>
+      <div>
+        <div class="container d-flex flex-row justify-content-center">
+          <captcha>
+            <div
+              id="_-869440632"
+              style="
+                background: white
+                  url(&#39;data:image/jpg;base64,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&#39;)
+                  no-repeat scroll left top;
+                width: 350px;
+                height: 50px;
+                margin: 2em;
+              "
+            >
+              &nbsp;
+            </div>
+          </captcha>
+        </div>
+
+        <div class="container d-flex flex-row justify-content-center">
+          <button class="btn btn-outline-dark mb-3">Abrir nueva imagen</button>
+        </div>
+        
+        <div
+        id="wwgrp_appointment_newAppointmentForm_captchaText"
+        class="input text s"
+        >
+        <div
+        id="wwlbl_appointment_newAppointmentForm_captchaText"
+        class="wwlbl"
+        >
+        <label for="appointment_newAppointmentForm_captchaText" class="label">
+          Introduzca aquí el texto que ve en la imagen que aparece encima de
+          este espacio:
+        </label>
+        </div>
+        <div id="wwctrl_appointment_newAppointmentForm_captchaText">
+          <input
+          class="form-control"
+            type="text"
+            name="captchaText"
+            value=""
+            id="appointment_newAppointmentForm_captchaText"
+            class="input text s"
+            onkeypress="checkKey(event)"
+            />
+          </div>
+        </div>
+        <div class="container d-flex flex-row mt-3 mb-5 justify-content-around">
+          <button class="btn btn-outline-dark mb-3">Guardar</button>
+          <button class="btn btn-outline-dark mb-3">Cancelar</button>
+        </div>
+      </div>
     </div>
-    <button class="btn btn-outline-danger mb-3" onClick="window.location.reload();">Refresh Page</button>
-    <div>
-      <label for="apellido" class="label">Apellido</label>
-      <input id="apellido" class="form-control" type="text">
-    </div>
-    <div>
-      <label for="nombre" class="label">Nombre</label>
-      <input id="nombre" class="form-control" type="text">
-    </div>
-    <div>
-      <label for="mail" class="label">Mail</label>
-      <input id="mail" class="form-control" type="mail">
-    </div>
-    <div>
-      <label for="mail" class="label">Mail</label>
-      <input id="mail" class="form-control" type="mail">
-    </div>
-    <div>
-      <label for="telefono" class="label">Telefono</label>
-      <input id="telefono" class="form-control" type="text">
-    </div>
-    <div>
-      <label for="pasaporte" class="label">Pasaporte</label>
-      <input id="pasaporte" class="form-control" type="text">
-    </div>
-    <div>
-      <label for="pasaporte" class="label">Pasaporte</label>
-      <input id="pasaporte" class="form-control" type="text">
-    </div>
-    <div>
-      <label for="date" class="label">Fecha de Nacimiento</label>
-      <input id="date" class="form-control" type="date" onkeydown="return false">
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-      <label class="form-check-label" for="flexCheckDefault">
-        Mensaje en aleman que no sabemos que no sabemos que dice
-      </label>
-    </div>
-  </div>
-  
-</body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
 </html>
